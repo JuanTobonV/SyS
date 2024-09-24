@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    font-family: "Public Sans", sans-serif;
+}
+
+nav{
+    background-color: #FBCFE8;
+    padding: 10px 0px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.logo a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+    
+
+.menu a:hover{
+    border-bottom: 1px solid black;
+    
+}
+
+.banner{
+    position: relative;
+    background-image: url("../img/banner.jpg") ;
+    padding: 25%;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    color: white;
+    text-align: center;
+
+
+}
+
+.btn-banner{
+    background-color: #DB2777;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    
+    
+}
+
+
+
+.banner::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    content: '';
+    opacity: 0.8;
+    z-index: -1;
+}
+
+
+
+.products{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid #FBCFE8;
+    background-color: white;
+    padding: 1.5rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.copyright {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #DB2777;
+}
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+.footer-link {
+    color: #DB2777;
+    transition: color 0.3s ease;
+}
+.footer-link:hover {
+    color: #C026D3;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.card{
+    
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    -webkit-box-shadow: -4px 5px 56px -12px rgba(0,0,0,0.24);
+-moz-box-shadow: -4px 5px 56px -12px rgba(0,0,0,0.24);
+box-shadow: -4px 5px 56px -12px rgba(0,0,0,0.24);
+}
+
+
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        height: 6rem;
+    }
+    .copyright {
+        text-align: left;
+    }
+}
+
